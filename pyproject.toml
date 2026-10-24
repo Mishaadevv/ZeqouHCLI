@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "zeqou-harness-cli"
+version = "0.5.0"
+description = "A compact terminal AI coding agent with tools, project sessions, web search, and vision support"
+keywords = ["ai", "coding-agent", "cli", "terminal", "llm", "developer-tools", "vision"]
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Zeqou contributors" }]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Environment :: Console",
+  "Operating System :: OS Independent",
+]
+dependencies = ["rich>=13.7.0", "prompt-toolkit>=3.0.43", "Pillow>=10.0.0"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0.0", "build>=1.2.0", "twine>=5.0.0"]
+
+[project.urls]
+Homepage = "https://github.com/Mishaadevv/ZeqouHCLI"
+Repository = "https://github.com/Mishaadevv/ZeqouHCLI"
+Issues = "https://github.com/Mishaadevv/ZeqouHCLI/issues"
+Changelog = "https://github.com/Mishaadevv/ZeqouHCLI/blob/main/CHANGELOG.md"
+
+[project.scripts]
+zeqouhcli = "zeqouhcli.app:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["zeqouhcli*"]
