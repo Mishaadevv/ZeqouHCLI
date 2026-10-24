@@ -9,3 +9,4 @@ recursive-include tests *.py
 include CONTRIBUTING.md
 include SECURITY.md
 include publish.ps1
+include NOTICE

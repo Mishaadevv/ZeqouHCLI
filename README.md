@@ -1,8 +1,8 @@
-# Zeqou[H]CLI — Zeqou Harness CLI
+# Zeqou[H]CLI â€” Zeqou Harness CLI
 
 A compact terminal AI coding agent that can inspect and edit a project, run approved commands, research public web pages, and send project images to compatible vision models. Built for OpenAI-compatible Chat Completions providers.
 
-> **Release:** 0.5.0 · **Python:** 3.10+ · **License:** MIT
+> **Release:** 0.5.0 Â· **Python:** 3.10+ Â· **License:** Apache-2.0
 
 ## Features
 
@@ -18,7 +18,7 @@ A compact terminal AI coding agent that can inspect and edit a project, run appr
 
 Python 3.10 or newer is required.
 
-### Windows — one-command installer
+### Windows â€” one-command installer
 
 Open PowerShell and paste this command. It downloads the public source from GitHub, installs ZeqouHCLI and its dependencies, and adds the Python Scripts directory to your user `PATH` automatically. No administrator rights or Git installation are required.
 
@@ -96,7 +96,7 @@ py -3 -m build
 py -3 -m twine check dist/*
 ```
 
-CI tests Python 3.10–3.13 and checks built distributions. Tag a release with `v0.5.0` (or the next version) to build artifacts and create a GitHub Release automatically.
+CI tests Python 3.10â€“3.13 and checks built distributions. Tag a release with `v0.5.0` (or the next version) to build artifacts and create a GitHub Release automatically.
 
 ## Security
 
@@ -104,4 +104,4 @@ Do not commit API keys, `.env`, local `config.json`, or chat-session files. Revi
 
 ## License
 
-MIT. See [LICENSE](LICENSE).
+Apache License 2.0. See [LICENSE](LICENSE).

@@ -1,8 +1,12 @@
 # Changelog
 
+## Unreleased
+
+- Switched the project license metadata and license file to Apache License 2.0.
+
 ## Repository preparation
 
-- Added GitHub Actions CI across Python 3.10–3.13 and package build validation.
+- Added GitHub Actions CI across Python 3.10â€“3.13 and package build validation.
 - Added tagged-release workflow for publishing wheel and source distribution artifacts.
 - Added contribution/security guides, package project URLs, developer extras, and distribution manifest.
 - Updated README with GitHub installation, usage, context limitations, and development commands.
