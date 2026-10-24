@@ -16,14 +16,28 @@ A compact terminal AI coding agent that can inspect and edit a project, run appr
 
 ## Install
 
-### From a source checkout
-
 Python 3.10 or newer is required.
+
+### Windows — one-command installer
+
+Open PowerShell and paste this command. It downloads the public source from GitHub, installs ZeqouHCLI and its dependencies, and adds the Python Scripts directory to your user `PATH` automatically. No administrator rights or Git installation are required.
+
+```powershell
+irm https://raw.githubusercontent.com/Mishaadevv/ZeqouHCLI/main/install.ps1 | iex
+```
+
+After installation, open any project directory in PowerShell and run:
+
+```powershell
+zeqouhcli
+```
+
+### Install from a source checkout
 
 **Windows**
 
 ```powershell
-py -3 -m pip install --user .
+.\install.bat
 ```
 
 **Linux/macOS**
@@ -32,17 +46,7 @@ py -3 -m pip install --user .
 python3 -m pip install --user .
 ```
 
-Once published, install directly from GitHub with:
-
-```powershell
-py -3 -m pip install --user "git+https://github.com/Mishaadevv/ZeqouHCLI.git"
-```
-
-The package installs the `zeqouhcli` command. If the user-level Scripts directory is not in `PATH`, run it as a module instead:
-
-```powershell
-py -3 -m zeqouhcli
-```
+If your shell has not refreshed `PATH` yet, use `py -3 -m zeqouhcli` as a fallback.
 
 ## Run inside a project
 
